@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Warna latar belakang gelap */
+    color: #fff; /* Warna teks putih */
+    position: relative; /* Tambahkan posisi relatif untuk dapat menempatkan gambar dengan posisi absolut */
+}
+
+header {
+    background-color: #333; /* Warna latar belakang header */
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #ebc53d; /* Warna judul */
+}
+
+main {
+    padding: 20px;
+}
+
+.love-section {
+    text-align: center;
+    margin-bottom: 40px;
+    background-color: #333; /* Warna latar belakang bagian cinta */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1); /* Efek bayangan */
+    position: relative; /* Tambahkan posisi relatif untuk dapat menempatkan gambar dengan posisi absolut */
+}
+
+button {
+    background-color: #ebc53d; /* Warna tombol */
+    color: #121212; /* Warna teks tombol */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffcc00; /* Warna latar belakang tombol saat disorot */
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    background-color: #333;
+    color: #ebc53d; /* Warna teks footer */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.audio-container {
+    text-align: center;
+}
+
+/* Tambahkan gambar latar belakang */
+.love-section:after {
+    content: '';
+    background-image: url('sembarang.jpg'); /* Ganti 'gambar.jpg' dengan lokasi file gambar Anda */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 25em; /* Sesuaikan ukuran gambar */
+    height: 25em; /* Sesuaikan ukuran gambar */
+    position: absolute;
+    top: 100%; /* Letakkan gambar di bawah button */
+    left: 52%; /* Pusatkan gambar secara horizontal */
+    transform: translateX(-50%); /* Pusatkan gambar secara horizontal */
+    margin-top: 30px; /* Sesuaikan jarak antara tombol dan gambar */
+    z-index: -1; /* Pastikan gambar muncul di belakang latar belakang .love-section */
+}
+
+
+
